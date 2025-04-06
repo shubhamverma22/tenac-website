@@ -1,0 +1,276 @@
+.hero {
+    background: url('/assets/images/banner/digital-transformation-bg.png') no-repeat center center/cover;    
+}
+// Digital Transformation
+.digital-transformation{
+    margin: 80px 0;
+    text-align: center;
+    .heading {
+        font-size: 44px;
+        font-weight: 900;
+        color: var(--primary-blue);
+        margin-bottom: 0;
+        @media (max-width: 991px) {
+            font-size: 32px;
+        }
+    }
+    .sub-heading {
+        font-size: 24px;
+        font-weight: 400;
+        color: var(--black-txt);
+    }
+    .description {
+        font-size: 24px;
+        font-weight: 400;
+        color: var(--gray);
+        margin-top: 10px;
+        max-width: 800px;
+        margin-left: auto;
+        margin-right: auto;
+        @media (max-width: 991px) {
+            max-width: 90%;
+            font-size: 20px;
+        }
+    }
+    .digitize img {
+        @media (max-width: 991px) {
+            width: 100%;
+        }
+    }
+}
+// Service
+.transformation-service {
+    background: linear-gradient(to bottom, var(--lite-white) 70%, #fff 30%);
+    padding: 80px 40px;
+    display: flex;
+    justify-content: center;
+    
+    .content {
+        display: flex;
+        align-items: flex-start;
+        @media (max-width: 991px) {
+            flex-direction: column;
+        }
+        img {
+            width: 50%;
+        }
+        .text {
+            padding-left: 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+
+            h2 {
+                color: var(--gray-shade);
+                font-size: 44px;
+                font-weight: 400;
+                @media (max-width: 991px) {
+                    font-size: 22px;
+                }
+                strong {
+                    color: var(--primary-blue);
+                    font-weight: 900;
+                    display: block;
+                }
+            }
+            p {
+                color: #4E4E4E;
+                font-size: 30px;
+                margin-top: 10px;
+                line-height: 130%;
+            }
+        }
+    }
+
+    @media (max-width: 768px) {
+        .content {
+            flex-direction: column;
+            text-align: center;
+
+            img {
+                width: 100%;
+            }
+
+            .text {
+                width: 100%;
+                padding-left: 0;
+                margin-top: 20px;
+            }
+        }
+    }
+}
+// Industry we serve
+.industry-section {
+    text-align: center;
+    padding: 50px 0;
+    background: #fff;
+    h2 {
+        color: var(--primary-blue);
+        font-weight: 900;
+    }
+    .services-container {
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+        padding: 20px;
+        flex-wrap: wrap;
+    }
+    .service-card {
+        background: var(--lite-white);
+        width: 250px;
+        border-radius: 10px;
+        overflow: hidden;
+        text-align: center;
+        transition: .2s;
+        @media (max-width: 991px) {
+            width: 90%;
+        }
+        &:hover, &.active {
+            border-bottom: solid 4px var(--primary-blue);
+            .service-content a {
+                margin-left: 2px;
+            }
+    
+        }
+    }
+    .service-card img {
+        width: 100%;
+        height: 150px;
+        object-fit: cover;
+    }
+    .service-content {
+        padding: 15px;
+    }
+    .service-content h3 {
+        font-size: 31px;
+        font-weight: 900;
+        color: var(--primary-blue);
+    }
+    .service-content p {
+        font-size: 14px;
+        color: var(--black-txt);
+        margin-bottom: 10px;
+    }
+    .service-content a {
+        color: var(--primary-blue);
+        font-size: 11px;
+        font-weight: 900;
+        text-decoration: none;
+        display: inline-flex;
+        align-items: center;
+        gap: 7px;
+        img {
+            width: 11px;
+            height: 11px;
+        }
+    }
+}
+// 
+.company-section {
+    padding: 120px 0;
+    background-color: var(--lite-white);
+    @media (max-width: 991px) {
+        margin: 80px 0;
+    }
+    .c-data {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        @media (max-width: 991px) {
+            flex-direction: column;
+        }
+    }
+}
+.company-text {
+    flex: 1;
+    color: var(--black-shade);
+    h3 {
+        font-size: 30px;
+        font-weight: 900;
+    }
+     p{
+        font-size: 30px;
+        font-weight: 400;
+        line-height: 129%;
+     }
+}
+.company-text h2 {
+    color: var(--gray-txt);
+    font-size: 34px;
+    font-weight: 400;
+    margin-bottom: 10px;
+    position: relative;
+    max-width: 70%;
+    margin-left: auto;
+    @media (max-width: 991px) {
+        max-width: 100%;
+        margin: auto;
+    }
+    b{
+        color: var(--primary-blue);
+        font-weight: 900;
+        display: block;
+    }
+}
+.company-description {
+    flex: 1;
+    border-left: 3px solid var(--primary-blue);
+    padding-left: 20px;
+    font-size: 25px;
+    font-weight: 400;
+    color: var(--black-shade);
+}
+// DT service banner
+// Footer Banner
+.footer-banner {
+    position: relative;
+    background: url('/assets/images/dt-service-bg.png') no-repeat center center/cover;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-align: center;
+    @media (max-width: 991px) {
+        height: 400px;
+    }
+    .overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.5);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .content h1 {
+        font-size: 59px;
+        font-weight: 400;
+        line-height: 176%;
+        @media (max-width: 991px) {
+            font-size: 32px;
+        }
+        span {
+            font-weight: 700;
+            color: var(--primary-yellow);
+            display: block;
+        }
+    }
+    .btn {
+        display: inline-block;
+        background: #FFC107;
+        color: var(--black-txt);
+        font-size: 22px;
+        padding: 10px 40px;
+        margin-top: 20px;
+        text-decoration: none;
+        font-weight: 400;
+        border-radius: 5px;
+    }
+    .btn:hover {
+        background: #e0a800;
+    }
+}

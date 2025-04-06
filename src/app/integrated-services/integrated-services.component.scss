@@ -1,0 +1,122 @@
+.services-section {
+    background: url("/assets/images/industry-bg.png") center/cover no-repeat;
+    padding: 60px 20px;
+    position: relative;
+    text-align: center;
+}
+
+.main-heading {
+    font-size: 48px;
+    color: white;
+    margin-bottom: 40px;
+}
+
+.main-heading span {
+    font-weight: 900;
+    color: #fff;
+    padding: 0 10px;
+    border-bottom: 3px solid var(--primary-yellow);
+}
+.set-lg {
+    @media (min-width: 1024px) and (max-width: 1919px) {
+        transform: translateX(-9%);
+    }
+}
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    max-width: 1000px;
+    margin: auto;
+    position: relative;
+    &.grid2 {
+        transform: translateX(17%);
+        @media (max-width:1100px) {
+            transform: translateX(17%) scale(.8);
+        }
+        @media (max-width:900px) {
+            transform: translateX(0) scale(.6);
+        }
+        @media (max-width:767px) {
+            transform: translateX(0) scale(1);
+            margin-top: 20px;
+        }
+    }
+    @media (max-width:1100px) {
+        transform: scale(.8);
+    }
+    @media (max-width:900px) {
+        transform: scale(.6) translateX(0);
+        .arrow1, .arrow2, .arrow3, .arrow4, .arrow5 {
+            display: none;
+        }
+    }
+    @media (max-width:767px) {
+        transform: translateX(0) scale(1);
+    }
+}
+
+.service-card {
+    transition: .2s;
+    h3 {
+        font-size: 23px;
+        font-weight: 900;
+        color: #fff;
+        margin: 10px 0;
+    }
+
+    img {
+        width: 150px;
+        height: auto;
+    }
+
+    &:hover {
+        transform: translateY(-8px);
+
+        h3 {
+            color: var(--primary-yellow);
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .main-heading {
+        font-size: 1.5rem;
+    }
+}
+/* Responsive for mobile */
+@media (max-width: 768px) {
+    .grid-container {
+        grid-template-columns: 1fr;
+    }
+}
+.arrow1 {
+    position: absolute;
+    left: 134px;
+    top: 165px;
+    transform: scale(.7);
+}
+.arrow2 {
+    position: absolute;
+    left: 301px;
+    top: 97px;
+    transform: scale(0.7) scaleY(-1);
+}
+.arrow3 {
+    position: absolute;
+    left: 480px;
+    top: 165px;
+    transform: scale(.7);
+}
+.arrow4 {
+    position: absolute;
+    left: 648px;
+    top: 97px;
+    transform: scale(0.7) scaleY(-1);
+}
+.arrow5 {
+    position: absolute;
+    left: 820px;
+    top: 165px;
+    transform: scale(.7);
+}
