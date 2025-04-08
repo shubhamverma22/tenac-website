@@ -23,6 +23,7 @@
         align-items: center;
         gap: 40px;
         margin-bottom: 50px;
+        margin-left: 20px;
         @media (max-width: 991px) {
             font-size: 20px;
         }
@@ -65,8 +66,9 @@
         @media (max-width: 991px) {
             flex-direction: column;
         }
-        >img {
-            @media (max-width: 991px) {
+        > img {
+            width: 500px;
+            @media (max-width:991px) {
                 width: 100%;
             }
         }
@@ -75,6 +77,7 @@
             margin-left: 14%;
             @media (max-width:991px) {
                 margin: auto;
+                padding: 0 40px;
             }
             & + img {
                 width: 500px;
@@ -88,13 +91,8 @@
             margin-right: 14%;
             @media (max-width:991px) {
                 margin: auto;
-            }
-            & + img {
-                width: 500px;
-                @media (max-width:991px) {
-                    width: 100%;
-                }
-            }
+                padding: 0 40px;
+            }            
         }
         .points-data {
             display: flex;
@@ -123,4 +121,58 @@
             }
         }
     }
+}
+.why-choose {
+    background-color: #fff;
+    .features {
+        gap: 40px;
+        .feature {
+            background: url("/assets/images/why-choose-line.png") no-repeat;
+            border: none;
+            background-size: cover;
+            box-shadow: none;
+            text-align: left;
+            border-radius: 0;
+            position: relative;
+            @media (max-width: 991px) {
+                background: none;
+            }
+            em {
+                position: absolute;
+                right: -34px;
+                top: -22px;
+                font-style: normal;
+                border: solid 5px #A7A7A7;
+                font-size: 35px;
+                font-weight: 900;
+                color: var(--black-txt);
+                border-radius: 50%;
+                width: 50px;
+                height: 50px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                @media (max-width: 991px) {
+                    right: initial;
+                    left: 0;
+                    top: -35px;
+                }
+            }
+            img {
+                margin-left: 25px;
+            }
+            .htext {
+                display: flex;
+                gap: 10px;
+                align-items: center;
+                margin-bottom: 36px;
+            }
+            p {
+                padding-right: 30px;
+            }
+        }
+    }
+}
+.footer-banner {
+    background: url('/assets/images/banner/smart-fleet.png') no-repeat center center/cover;
 }
