@@ -1,5 +1,5 @@
 .hero {
-    background: url('/assets/images/banner/fm-detail.png') no-repeat center center/cover;
+    background: url('/assets/images/banner/si-detail.png') no-repeat center center/cover;
 }
 // Our Features
 .our-features{
@@ -11,8 +11,11 @@
         font-weight: 900;
         margin-bottom: 0;
         color: var(--primary-blue);
+        max-width: 60%;
+        margin: auto;
         @media (max-width: 991px) {
             font-size: 32px;
+            max-width: 90%;
         }
     }
     .feature-heading{
@@ -171,4 +174,9 @@
 }
 .footer-banner {
     background: url('/assets/images/banner/smart-fleet.png') no-repeat center center/cover;
+    h1 {
+        b {
+            
+        }
+    }
 }

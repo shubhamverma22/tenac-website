@@ -22,6 +22,12 @@ import { MiningComponent } from './mining/mining.component';
 import { FleetManagementComponent } from './fleet-management/fleet-management.component';
 import { LogisticsComponent } from './logistics/logistics.component';
 import { FleetManagementDetailComponent } from './fleet-management-detail/fleet-management-detail.component';
+import { FactoryFeaturesComponent } from './shared/factory-features/factory-features.component';
+import { IndustrialIotSolutionComponent } from './industrial-iot-solution/industrial-iot-solution.component';
+import { PredictiveMaintenanceComponent } from './predictive-maintenance/predictive-maintenance.component';
+import { VechileTrackingComponent } from './vechile-tracking/vechile-tracking.component';
+import { AssetsTrackingStystemComponent } from './assets-tracking-stystem/assets-tracking-stystem.component';
+import { SensorIntegrationComponent } from './sensor-integration/sensor-integration.component';
 // import { CarouselModule } from 'ngx-owl-carousel-o';
 
 @NgModule({
@@ -45,7 +51,13 @@ import { FleetManagementDetailComponent } from './fleet-management-detail/fleet-
     MiningComponent,
     FleetManagementComponent,
     LogisticsComponent,
-    FleetManagementDetailComponent
+    FleetManagementDetailComponent,
+    FactoryFeaturesComponent,
+    IndustrialIotSolutionComponent,
+    PredictiveMaintenanceComponent,
+    VechileTrackingComponent,
+    AssetsTrackingStystemComponent,
+    SensorIntegrationComponent
   ],
   imports: [
     BrowserModule,

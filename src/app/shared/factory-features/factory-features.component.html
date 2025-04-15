@@ -1,0 +1,23 @@
+<div class="dt-points">
+    <img [src]="factoryFeatureData.largeImg" alt="Digital Transformation is Important">
+    <div>
+        <div class="feature-heading">
+            <span>{{factoryFeatureData?.featureNumber}}</span>
+            {{factoryFeatureData?.heading}}
+        </div>
+        <div class="points-data">
+            <img [src]="factoryFeatureData?.icon1" alt="{{factoryFeatureData?.subHeading1}}">
+            <div class="border-left">
+                <h5>{{factoryFeatureData?.subHeading1}}</h5>
+                <p>{{factoryFeatureData?.fetureDescription1}}</p>
+            </div>
+        </div>
+        <div class="points-data">
+            <img [src]="factoryFeatureData?.icon2" alt="{{factoryFeatureData?.subHeading2}}">
+            <div class="border-left">
+                <h5>{{factoryFeatureData?.subHeading2}}</h5>
+                <p>{{factoryFeatureData?.fetureDescription2}}</p>
+            </div>
+        </div>
+    </div>
+</div>
