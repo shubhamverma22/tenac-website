@@ -1,0 +1,75 @@
+<app-header-nav></app-header-nav>
+<!-- Banner -->
+<section class="hero">
+    <div class="overlay">
+        <div class="social-icons">
+            <a role="button"><img src="/assets/images/facebook.png" alt="Facebook"></a>
+            <a role="button"><img src="/assets/images/twitter.png" alt="Twitter"></a>
+            <a role="button"><img src="/assets/images/linkedin.png" alt="LinkedIn"></a>
+            <a role="button"><img src="/assets/images/youtube.png" alt="Youtube"></a>
+            <a role="button"><img src="/assets/images/instagram.png" alt="Instagram"></a>
+            <a role="button"><img src="/assets/images/quora.png" alt="Quora"></a>
+            <a role="button"><img src="/assets/images/blogger.png" alt="Blog"></a>
+        </div>
+        <div class="content">
+            <h2>Engineered for Extreme Environments</h2>
+            <h1>Hardware Solutions for Mining</h1>
+            <p>Redefine digitaized durability, and reliability, in mine with Rugged PCs, Displays, and Sensors.</p>
+            <a role="button" class="btn">Get Started</a>
+        </div>
+    </div>
+</section>
+<!-- our-features -->
+<section class="our-features">
+    <div class="container">
+        <div class="heading">Powering Precision in the Harshest Environments <br/>- Rugged Solutions for Every Challenge</div>
+        <div class="description">OUR FEATURES</div>
+        <app-factory-features [factoryFeatureData]="factoryFeatureData"></app-factory-features>
+        <app-factory-features [factoryFeatureData]="factoryFeatureData2" class="reverse-sec"></app-factory-features>
+        <app-factory-features [factoryFeatureData]="factoryFeatureData3"></app-factory-features>
+        <app-factory-features [factoryFeatureData]="factoryFeatureData4" class="reverse-sec"></app-factory-features>
+    </div>
+</section>
+
+<section class="footer-banner">
+    <div class="overlay">
+        <div class="container">
+            <div class="content">
+                <h1>Upgrade your operations with <br/><b>rugged technology</b></h1>
+                <a role="btn" class="btn">Let's Discuss</a>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Why Choose us -->
+<section class="why-choose">
+    <h3>Why Choose Us? </h3>
+    <h2>Seeking Solutions Tailored to Your Needs?</h2>
+    <p>At Vareli Tecnac, we pride ourselves on implementing robust technology to transform vehicle tracking in the mining industry.</p>
+    <div class="container">
+        <div class="features">
+            <div class="feature">
+                <img src="/assets/images/icons/built-for-mining.png" alt="Built for Mining Environments">
+                <h4>Built for Mining Environments</h4>
+                <p>Our rugged computing solutions are engineered to withstand the harsh conditions and extreme demands of the mining industry. Featuring robust construction, enhanced environmental protection, and superior shock/vibration resistance, our hardware ensures reliable performance and uninterrupted productivity in the field.</p>
+            </div>
+            <!-- <div class="separator"></div> -->
+            <div class="feature">
+                <img src="/assets/images/icons/seamless-integ.png" alt="Seamless Integration">
+                <h4>Seamless Integration</h4>
+                <p>Designed for easy integration into your mining operations, our rugged PCs, displays, and sensors seamlessly connect with your existing systems and workflows. Leverage our flexible solutions to enhance visibility, automate processes, and drive data-driven decision-making across your operations.</p>
+            </div>
+            <!-- <div class="separator"></div> -->
+            <div class="feature">
+                <img src="/assets/images/icons/unparallel.png" alt="Unparalleled Durability">
+                <h4>Unparalleled Durability</h4>
+                <p>Trusted by leading mining companies, our rugged hardware is built to last. With a focus on longevity and low maintenance, our products minimize downtime and reduce the total cost of ownership, empowering you to maximize your return on investment.</p>
+            </div>
+        </div>
+    </div>
+</section>
+<app-offering></app-offering>
+<app-testimonial></app-testimonial>
+<app-faq></app-faq>
+
+<app-footer></app-footer>

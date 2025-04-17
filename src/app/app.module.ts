@@ -28,6 +28,13 @@ import { PredictiveMaintenanceComponent } from './predictive-maintenance/predict
 import { VechileTrackingComponent } from './vechile-tracking/vechile-tracking.component';
 import { AssetsTrackingStystemComponent } from './assets-tracking-stystem/assets-tracking-stystem.component';
 import { SensorIntegrationComponent } from './sensor-integration/sensor-integration.component';
+import { FuleMonitoringSystemComponent } from './fule-monitoring-system/fule-monitoring-system.component';
+import { FleetManagementSolutionComponent } from './fleet-management-solution/fleet-management-solution.component';
+import { PersonalSaftyFatigueComponent } from './personal-safty-fatigue/personal-safty-fatigue.component';
+import { RuggedPcsComponent } from './rugged-pcs/rugged-pcs.component';
+import { AssetsTrackingSolutionComponent } from './assets-tracking-solution/assets-tracking-solution.component';
+import { FuleMonitorDetailComponent } from './fule-monitor-detail/fule-monitor-detail.component';
+import { PredictiveMaintainanceSolutionComponent } from './predictive-maintainance-solution/predictive-maintainance-solution.component';
 // import { CarouselModule } from 'ngx-owl-carousel-o';
 
 @NgModule({
@@ -57,7 +64,14 @@ import { SensorIntegrationComponent } from './sensor-integration/sensor-integrat
     PredictiveMaintenanceComponent,
     VechileTrackingComponent,
     AssetsTrackingStystemComponent,
-    SensorIntegrationComponent
+    SensorIntegrationComponent,
+    FuleMonitoringSystemComponent,
+    FleetManagementSolutionComponent,
+    PersonalSaftyFatigueComponent,
+    RuggedPcsComponent,
+    AssetsTrackingSolutionComponent,
+    FuleMonitorDetailComponent,
+    PredictiveMaintainanceSolutionComponent
   ],
   imports: [
     BrowserModule,

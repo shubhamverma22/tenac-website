@@ -19,5 +19,12 @@
                 <p>{{factoryFeatureData?.fetureDescription2}}</p>
             </div>
         </div>
+        <div class="points-data" *ngIf="factoryFeatureData?.subHeading3">
+            <img [src]="factoryFeatureData?.icon3" alt="{{factoryFeatureData?.subHeading3}}">
+            <div class="border-left">
+                <h5>{{factoryFeatureData?.subHeading3}}</h5>
+                <p>{{factoryFeatureData?.fetureDescription3}}</p>
+            </div>
+        </div>
     </div>
 </div>

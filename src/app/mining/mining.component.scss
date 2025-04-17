@@ -51,11 +51,39 @@
             width: 100%;
         }
     }
-    
     .dt-points {
         display: flex;
+        align-items: center;
         gap: 30px;
         margin-top: 100px;
+        position: relative;
+        &::before {
+            content: "";
+            position: absolute;
+            top: 100px;
+            left: 170px;
+            background: url("/assets/images/bottom-line.png")no-repeat;
+            height: 65px;
+            width: calc(100% - 170px);
+            background-size: contain;
+            transform: rotateX(180deg);
+            @media (max-width: 991px) {
+              display: none;  
+            }
+        }
+        &::after {
+            content: "";
+            position: absolute;
+            bottom: 10%;
+            left: 280px;
+            background: url("/assets/images/bottom-line.png")no-repeat;
+            height: 65px;
+            width: calc(100% - 280px);
+            background-size: contain;
+            @media (max-width: 991px) {
+              display: none;  
+            }
+        }
         @media (max-width: 991px) {
             flex-direction: column;
         }
