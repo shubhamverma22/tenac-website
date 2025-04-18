@@ -231,6 +231,11 @@ body {
         background: #e0a800;
     }
 }
+.no-border-shadow{
+    border: none !important;
+    box-shadow: none !important;
+    border-left: none !important;
+}
 // Why choose us
 .why-choose {
     padding: 80px 20px;
@@ -276,8 +281,8 @@ body {
             border-radius: 20px;
             padding: 30px;
             transition: .2s;
-            border: dashed 2px var(--primary-blue);
-            border-left: dashed 5px #d8d8d8 !important;
+            border: dashed 4px #d8d8d8;
+            border-left: dashed 5px #d8d8d8;
             @media (max-width: 991px) {
                 width: 100%;
             }
@@ -350,9 +355,4 @@ body {
     80% { transform: translate(-1px, -1px) rotate(1deg); }
     90% { transform: translate(1px, 2px) rotate(0deg); }
     100% { transform: translate(1px, -2px) rotate(-1deg); }
-}
-.no-border-shadow{
-    border: none !important;
-    box-shadow: none !important;
-    border-left: none !important;
 }

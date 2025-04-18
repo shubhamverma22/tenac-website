@@ -1,3 +1,6 @@
+::ng-deep .reverse-sec .dt-points {
+    flex-direction: row-reverse;
+}
 .dt-points {
     display: flex;
     align-items: center;
@@ -65,7 +68,4 @@
 .border-left {
     border-left: solid 1px #86888A;
     padding-left: 20px;
-}
-::ng-deep .reverse-sec .dt-points {
-    flex-direction: row-reverse;
 }

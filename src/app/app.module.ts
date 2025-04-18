@@ -35,6 +35,13 @@ import { RuggedPcsComponent } from './rugged-pcs/rugged-pcs.component';
 import { AssetsTrackingSolutionComponent } from './assets-tracking-solution/assets-tracking-solution.component';
 import { FuleMonitorDetailComponent } from './fule-monitor-detail/fule-monitor-detail.component';
 import { PredictiveMaintainanceSolutionComponent } from './predictive-maintainance-solution/predictive-maintainance-solution.component';
+import { EducationComponent } from './education/education.component';
+import { BoardroomSolutionComponent } from './boardroom-solution/boardroom-solution.component';
+import { CampusItSolutionComponent } from './campus-it-solution/campus-it-solution.component';
+import { DigitalClassroomComponent } from './digital-classroom/digital-classroom.component';
+import { LearningManagementSystemComponent } from './learning-management-system/learning-management-system.component';
+import { LibraryManagementSolutionComponent } from './library-management-solution/library-management-solution.component';
+import { PaSystemComponent } from './pa-system/pa-system.component';
 // import { CarouselModule } from 'ngx-owl-carousel-o';
 
 @NgModule({
@@ -71,7 +78,14 @@ import { PredictiveMaintainanceSolutionComponent } from './predictive-maintainan
     RuggedPcsComponent,
     AssetsTrackingSolutionComponent,
     FuleMonitorDetailComponent,
-    PredictiveMaintainanceSolutionComponent
+    PredictiveMaintainanceSolutionComponent,
+    EducationComponent,
+    BoardroomSolutionComponent,
+    CampusItSolutionComponent,
+    DigitalClassroomComponent,
+    LearningManagementSystemComponent,
+    LibraryManagementSolutionComponent,
+    PaSystemComponent
   ],
   imports: [
     BrowserModule,

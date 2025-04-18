@@ -72,10 +72,13 @@
 
     &:hover {
         transform: translateY(-8px);
-
+        img {
+            filter: sepia(1);
+        }
         h3 {
             color: var(--primary-yellow);
         }
+        
     }
 }
 
