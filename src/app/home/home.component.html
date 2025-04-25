@@ -1,4 +1,6 @@
-<app-header-nav></app-header-nav>
+<div class="home-page">
+    <app-header-nav></app-header-nav>
+</div>
 <app-hero-banner></app-hero-banner>
 <!-- Our Company -->
 <section class="company-section">
@@ -32,8 +34,52 @@
     </div>
 </section>
 <!-- End Digital Transformation -->
- <!-- Our Experience -->
- <section class="experience-section">
+<!-- Driving Innovation Across Industries -->
+<div class="driving-innovation">
+    <div class="container">
+        <div class="heading">Driving Innovation Across Industries</div>
+    </div>
+    <div class="anim-container">
+        <div class="anim-card-list">
+            <div class="anim-card">
+                <h4>Mining</h4>
+                <div class="slide-top">
+                    <p>Reshaping mining landscapes with precision and power, leading a digital transformation that unlocks efficiency.</p>
+                    <a role="button" class="know-more">View More <img src="/assets/images/arrow-yellow.png" alt="Mining"></a>
+                </div>
+            </div>
+        </div>
+        <div class="anim-card-list">
+            <div class="anim-card">
+                <h4>Logistics</h4>
+                <div class="slide-top">
+                    <p>Leveraging the digital technology to provide real-time planning and routing for vehicles in transit.</p>
+                    <a role="button" class="know-more">View More <img src="/assets/images/arrow-yellow.png" alt="Mining"></a>
+                </div>
+            </div>
+        </div>
+        <div class="anim-card-list">
+            <div class="anim-card">
+                <h4>Manufacturing</h4>
+                <div class="slide-top">
+                    <p>From smart automation to data-driven insights, redefine efficiency and excellence while optimizing operations with precision.</p>
+                    <a role="button" class="know-more">View More <img src="/assets/images/arrow-yellow.png" alt="Mining"></a>
+                </div>
+            </div>
+        </div>
+        <div class="anim-card-list">
+            <div class="anim-card">
+                <h4>Education</h4>
+                <div class="slide-top">
+                    <p>Emerging opportunities in education, crafting e-platforms for personalized learning models and adaptive learning.</p>
+                    <a role="button" class="know-more">View More <img src="/assets/images/arrow-yellow.png" alt="Mining"></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Our Experience -->
+<section class="experience-section">
     <div class="experience-container">
         <div class="experience-years">
             20 <span>Years Of Experience</span>
@@ -65,13 +111,10 @@
 <section class="digitization-section">
     <div class="overlay">
         <h3>What Makes Us Different?</h3>
-        <h1>DIGITIZATION</h1>
+        <h1 *ngIf="currentIndex === 0" class="fade-in">DIGITIZATION</h1>
+        <h1 *ngIf="currentIndex === 1" class="fade-in">Integration</h1>
+        <h1 *ngIf="currentIndex === 2" class="fade-in">Customization</h1>
         <p>We lead with a commitment to quality and sincerity, offering an integrated approach for client success and a purpose of service.</p>
-        <div class="dots">
-            <span></span>
-            <span></span>
-            <span></span>
-        </div>
     </div>
 </section>
 <!-- Our Partner -->
@@ -95,14 +138,15 @@
  <!-- Our Client -->
 <section class="partners-section border-t">
     <h2 class="main-heading">OUR <span>Client</span></h2>
-    <div class="partners-container">
-        <div class="partner-logo"><img src="/assets/images/brio.png" alt="BRIO"></div>
-        <div class="partner-logo"><img src="/assets/images/canon.png" alt="Canon"></div>
-        <div class="partner-logo"><img src="/assets/images/microsoft.png" alt="Microsoft"></div>
-        <div class="partner-logo"><img src="/assets/images/schneider.png" alt="Schneider Electric"></div>
-        <div class="partner-logo"><img src="/assets/images/vertiv.png" alt="Vertiv"></div>
-        <div class="partner-logo"><img src="/assets/images/acer.png" alt="Acer"></div>
-    </div>
+    <img src="/assets/images/our-client.png" alt="Our Client">
+    <!-- <div class="partners-container marquee-container">
+        <div class="partner-logo marquee"><img src="/assets/images/brio.png" alt="BRIO"></div>
+        <div class="partner-logo marquee"><img src="/assets/images/canon.png" alt="Canon"></div>
+        <div class="partner-logo marquee"><img src="/assets/images/microsoft.png" alt="Microsoft"></div>
+        <div class="partner-logo marquee"><img src="/assets/images/schneider.png" alt="Schneider Electric"></div>
+        <div class="partner-logo marquee"><img src="/assets/images/vertiv.png" alt="Vertiv"></div>
+        <div class="partner-logo marquee"><img src="/assets/images/acer.png" alt="Acer"></div>
+    </div> -->
 </section>
 
 <app-offering></app-offering>

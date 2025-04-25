@@ -26,9 +26,22 @@
         <!-- Right Side (Button + Search) -->
         <div class="d-flex align-items-center">
             <a role="button" class="btn btn-primary get-in-touch">Get in Touch</a>
-            <button class="btn search-btn">
-                <img src="assets/images/search.png" alt="Search" class="search">
-            </button>
+            <div class="search-container">
+                <button class="btn search-btn" (click)="toggleSearch()">
+                    <img src="assets/images/search.png" alt="Search" class="search">
+                </button>
+                <div *ngIf="showSearch" class="search-input-wrapper">
+                    <input
+                    type="text"
+                    placeholder="Search..."
+                    [(ngModel)]="searchText"
+                    class="search-input"
+                    />
+                    <button *ngIf="searchText" class="clear-icon" (click)="clearSearch()">
+                    &times;
+                    </button>
+                </div>
+            </div>
         </div>
     </div>
 </nav>

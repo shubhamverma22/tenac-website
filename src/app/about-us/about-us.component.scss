@@ -133,7 +133,7 @@
 }
 // Industry
 .industries {
-    background: url("/assets/images/industry-bg.png") center/cover no-repeat;
+    // background: url("/assets/images/industry-bg.png") center/cover no-repeat;
     padding: 60px 20px;
     position: relative;
 
@@ -503,7 +503,7 @@
                     font-weight: 400;
                 }
             }
-            &.active {
+            &.active, &:hover {
                 img {
                     filter: none;
                 }

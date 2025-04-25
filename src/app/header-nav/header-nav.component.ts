@@ -6,5 +6,17 @@ import { Component } from '@angular/core';
   styleUrls: ['./header-nav.component.scss']
 })
 export class HeaderNavComponent {
+  showSearch = false;
+  searchText = '';
 
+  toggleSearch() {
+    this.showSearch = !this.showSearch;
+    if (!this.showSearch) {
+      this.searchText = '';
+    }
+  }
+
+  clearSearch() {
+    this.searchText = '';
+  }
 }

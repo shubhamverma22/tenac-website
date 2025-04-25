@@ -43,9 +43,9 @@
     </div>
 </section>
 <!-- Industry -->
-<section class="industries">
+<section class="industries" [ngStyle]="{ 'background': selectedBackground }">
     <h2>Industries We Serve</h2>
-    <div class="industries-container">
+    <div class="industries-container" style="display: none;">
         <div class="industry-card active">
             <div>
                 <h3>Mining</h3>
@@ -76,6 +76,21 @@
                 <p>From smart automation to end-to-end logistics, redefining efficiency excellence while optimizing operations with precision.</p>
             </div>
             <a role="button" class="know-more">Know More <img src="/assets/images/arrow-yellow.png" alt="Know more"></a>
+        </div>
+    </div>
+    <div class="industries-container">
+        <div
+          class="industry-card"
+          *ngFor="let industry of industries"
+          [class.active]="industry.name === selectedIndustry"
+          (click)="selectIndustry(industry)">
+          <div>
+            <h3>{{ industry.name }}</h3>
+            <p>{{ industry.description }}</p>
+          </div>
+          <a role="button" class="know-more">Know More 
+            <img src="/assets/images/arrow-yellow.png" alt="Know more" />
+          </a>
         </div>
     </div>
 </section>
