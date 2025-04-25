@@ -413,10 +413,13 @@
             overflow: hidden;
             position: relative;
             transition: .2s;
-            &:hover .anim-card{
-                background-color: rgba(1, 53, 111, 0.55);
-                .slide-top {
-                    transform: translateY(0);                
+            &:hover,
+            .active {
+                .anim-card{
+                    background-color: rgba(1, 53, 111, 0.55);
+                    .slide-top {
+                        transform: translateY(0);                
+                    }
                 }
             }
             .anim-card {
