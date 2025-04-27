@@ -43,7 +43,8 @@ import { DigitalClassroomComponent } from './digital-classroom/digital-classroom
 import { LearningManagementSystemComponent } from './learning-management-system/learning-management-system.component';
 import { LibraryManagementSolutionComponent } from './library-management-solution/library-management-solution.component';
 import { PaSystemComponent } from './pa-system/pa-system.component';
-// import { CarouselModule } from 'ngx-owl-carousel-o';
+import { CarouselModule } from 'ngx-owl-carousel-o';
+
 
 @NgModule({
   declarations: [
@@ -91,8 +92,9 @@ import { PaSystemComponent } from './pa-system/pa-system.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
-    // CarouselModule
+    FormsModule,
+    CarouselModule
+    
   ],
   providers: [],
   bootstrap: [AppComponent]

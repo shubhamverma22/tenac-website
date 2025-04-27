@@ -137,13 +137,27 @@
     <div class="container">
         <h2>Our <strong>Awards</strong></h2>
     </div>
-    <div class="awards-container">
-        <img src="/assets/images/award1.png" alt="Award 1">
-        <img src="/assets/images/award2.png" alt="Award 2">
-        <img src="/assets/images/award1.png" alt="Award 3">
-        <img src="/assets/images/award2.png" alt="Award 4">
-        <img src="/assets/images/award1.png" alt="Award 5">
-        <img src="/assets/images/award2.png" alt="Award 6">
+    <div class="awards-container" style="width: 100%;">
+        <owl-carousel-o [options]="award">
+            <ng-template carouselSlide>
+                <img src="/assets/images/award1.png" alt="Award 1">
+            </ng-template>
+            <ng-template carouselSlide>
+                <img src="/assets/images/award2.png" alt="Award 2">
+            </ng-template>
+            <ng-template carouselSlide>
+                <img src="/assets/images/award3.png" alt="Award 3">
+            </ng-template>
+            <ng-template carouselSlide>
+                <img src="/assets/images/award4.png" alt="Award 4">
+            </ng-template>
+            <ng-template carouselSlide>
+                <img src="/assets/images/award5.png" alt="Award 5">
+            </ng-template>
+            <ng-template carouselSlide>
+                <img src="/assets/images/award6.png" alt="Award 6">
+            </ng-template>
+        </owl-carousel-o>
     </div>
 </section>
 <!-- Your Business -->

@@ -40,42 +40,52 @@
         <div class="heading">Driving Innovation Across Industries</div>
     </div>
     <div class="anim-container">
-        <div class="anim-card-list">
-            <div class="anim-card">
-                <h4>Mining</h4>
-                <div class="slide-top">
-                    <p>Reshaping mining landscapes with precision and power, leading a digital transformation that unlocks efficiency.</p>
-                    <a role="button" class="know-more">View More <img src="/assets/images/arrow-yellow.png" alt="Mining"></a>
+        <owl-carousel-o [options]="innovation">
+            <ng-template carouselSlide>
+                <div class="anim-card-list">
+                    <div class="anim-card">
+                        <h4>Mining</h4>
+                        <div class="slide-top">
+                            <p>Reshaping mining landscapes with precision and power, leading a digital transformation that unlocks efficiency.</p>
+                            <a role="button" class="know-more">View More <img src="/assets/images/arrow-yellow.png" alt="Mining"></a>
+                        </div>
+                    </div>
                 </div>
-            </div>
-        </div>
-        <div class="anim-card-list">
-            <div class="anim-card">
-                <h4>Logistics</h4>
-                <div class="slide-top">
-                    <p>Leveraging the digital technology to provide real-time planning and routing for vehicles in transit.</p>
-                    <a role="button" class="know-more">View More <img src="/assets/images/arrow-yellow.png" alt="Mining"></a>
+            </ng-template>
+            <ng-template carouselSlide>
+                <div class="anim-card-list">
+                    <div class="anim-card">
+                        <h4>Logistics</h4>
+                        <div class="slide-top">
+                            <p>Leveraging the digital technology to provide real-time planning and routing for vehicles in transit.</p>
+                            <a role="button" class="know-more">View More <img src="/assets/images/arrow-yellow.png" alt="Mining"></a>
+                        </div>
+                    </div>
                 </div>
-            </div>
-        </div>
-        <div class="anim-card-list">
-            <div class="anim-card">
-                <h4>Manufacturing</h4>
-                <div class="slide-top">
-                    <p>From smart automation to data-driven insights, redefine efficiency and excellence while optimizing operations with precision.</p>
-                    <a role="button" class="know-more">View More <img src="/assets/images/arrow-yellow.png" alt="Mining"></a>
+            </ng-template>
+            <ng-template carouselSlide>
+                <div class="anim-card-list">
+                    <div class="anim-card">
+                        <h4>Manufacturing</h4>
+                        <div class="slide-top">
+                            <p>From smart automation to data-driven insights, redefine efficiency and excellence while optimizing operations with precision.</p>
+                            <a role="button" class="know-more">View More <img src="/assets/images/arrow-yellow.png" alt="Mining"></a>
+                        </div>
+                    </div>
                 </div>
-            </div>
-        </div>
-        <div class="anim-card-list">
-            <div class="anim-card">
-                <h4>Education</h4>
-                <div class="slide-top">
-                    <p>Emerging opportunities in education, crafting e-platforms for personalized learning models and adaptive learning.</p>
-                    <a role="button" class="know-more">View More <img src="/assets/images/arrow-yellow.png" alt="Mining"></a>
+            </ng-template>
+            <ng-template carouselSlide>
+                <div class="anim-card-list">
+                    <div class="anim-card">
+                        <h4>Education</h4>
+                        <div class="slide-top">
+                            <p>Emerging opportunities in education, crafting e-platforms for personalized learning models and adaptive learning.</p>
+                            <a role="button" class="know-more">View More <img src="/assets/images/arrow-yellow.png" alt="Mining"></a>
+                        </div>
+                    </div>
                 </div>
-            </div>
-        </div>
+            </ng-template>
+        </owl-carousel-o>
     </div>
 </div>
 <!-- Our Experience -->
@@ -120,13 +130,17 @@
 <!-- Our Partner -->
 <section class="partners-section">
     <h2 class="main-heading">OUR <span>PARTNERS</span></h2>
-    <div class="partners-container">
-        <div class="partner-logo"><img src="/assets/images/brio.png" alt="BRIO"></div>
-        <div class="partner-logo"><img src="/assets/images/canon.png" alt="Canon"></div>
-        <div class="partner-logo"><img src="/assets/images/microsoft.png" alt="Microsoft"></div>
-        <div class="partner-logo"><img src="/assets/images/schneider.png" alt="Schneider Electric"></div>
-        <div class="partner-logo"><img src="/assets/images/vertiv.png" alt="Vertiv"></div>
-        <div class="partner-logo"><img src="/assets/images/acer.png" alt="Acer"></div>
+    <div class="partners-container mt-5">
+        <div style="width: 80%;">
+            <owl-carousel-o [options]="customOptions">
+                <ng-template carouselSlide><img src="/assets/images/brio.png" alt="Slide 1"></ng-template>
+                <ng-template carouselSlide><img src="/assets/images/canon.png" alt="Slide 2"></ng-template>
+                <ng-template carouselSlide><img src="/assets/images/microsoft.png" alt="Slide 3"></ng-template>
+                <ng-template carouselSlide><img src="/assets/images/schneider.png" alt="Slide 4"></ng-template>
+                <ng-template carouselSlide><img src="/assets/images/vertiv.png" alt="Slide 5"></ng-template>
+                <ng-template carouselSlide><img src="/assets/images/acer.png" alt="Slide 6"></ng-template>
+            </owl-carousel-o>
+        </div>
     </div>
 </section>
 <!-- Our Blog -->

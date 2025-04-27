@@ -49,39 +49,51 @@
 </section>
 <!-- Industry we serve -->
 <section class="industry-section">
-    <h2 class="main-heading">Industry We Serve</h2>
-    <div class="services-container">
-        <div class="service-card">
-            <img src="/assets/images/it-img.png" alt="Industry We Serve">
-            <div class="service-content">
-                <h3>Mining</h3>
-                <p>Transforming mining landscapes with precision and power, through advanced vehicle tracking, fleet management and robust fuel monitoring!</p>
-                <a role="button">Consult Our Experts <img src="/assets/images/arrow.png" alt="Know more"></a>
-            </div>
-        </div>
-        <div class="service-card active">
-            <img src="/assets/images/it-infra.png" alt="Education ">
-            <div class="service-content">
-                <h3>Education </h3>
-                <p>Seamlessly adapt to the modern educational landscape with virtual e-classrooms and personalized learning platforms customized to individual needs. </p>
-                <a role="button">Consult Our Experts <img src="/assets/images/arrow.png" alt="Know more"></a>
-            </div>
-        </div>
-        <div class="service-card">
-            <img src="/assets/images/software-solution.png" alt="Logistics">
-            <div class="service-content">
-                <h3>Logistics</h3>
-                <p>Navigate the future of transportation into a streamlined notion of reliability with smart asset tracking and sensor integration technologies.</p>
-                <a role="button">Consult Our Experts <img src="/assets/images/arrow.png" alt="Know more"></a>
-            </div>
-        </div>
-        <div class="service-card">
-            <img src="/assets/images/cloud-solution.png" alt="Manufacturing">
-            <div class="service-content">
-                <h3>Manufacturing</h3>
-                <p>Enable your organization to streamline processes and achieve operational excellence with smart factories and IoT solutions.</p>
-                <a role="button">Consult Our Experts <img src="/assets/images/arrow.png" alt="Know more"></a>
-            </div>
+    <h2 class="main-heading mb-5">Industry We Serve</h2>
+    <div class="container">
+        <div class="services-container" style="width: 100%;">
+            <owl-carousel-o [options]="services">
+                <ng-template carouselSlide>
+                    <div class="service-card">
+                        <img src="/assets/images/it-img.png" alt="Industry We Serve">
+                        <div class="service-content">
+                            <h3>Mining</h3>
+                            <p>Transforming mining landscapes with precision and power, through advanced vehicle tracking, fleet management and robust fuel monitoring!</p>
+                            <a role="button">Consult Our Experts <img src="/assets/images/arrow.png" alt="Know more"></a>
+                        </div>
+                    </div>
+                </ng-template>
+                <ng-template carouselSlide>
+                    <div class="service-card">
+                        <img src="/assets/images/it-infra.png" alt="Education ">
+                        <div class="service-content">
+                            <h3>Education </h3>
+                            <p>Seamlessly adapt to the modern educational landscape with virtual e-classrooms and personalized learning platforms customized to individual needs. </p>
+                            <a role="button">Consult Our Experts <img src="/assets/images/arrow.png" alt="Know more"></a>
+                        </div>
+                    </div>
+                </ng-template>
+                <ng-template carouselSlide>
+                    <div class="service-card">
+                        <img src="/assets/images/software-solution.png" alt="Logistics">
+                        <div class="service-content">
+                            <h3>Logistics</h3>
+                            <p>Navigate the future of transportation into a streamlined notion of reliability with smart asset tracking and sensor integration technologies.</p>
+                            <a role="button">Consult Our Experts <img src="/assets/images/arrow.png" alt="Know more"></a>
+                        </div>
+                    </div>
+                </ng-template>
+                <ng-template carouselSlide>
+                    <div class="service-card">
+                        <img src="/assets/images/cloud-solution.png" alt="Manufacturing">
+                        <div class="service-content">
+                            <h3>Manufacturing</h3>
+                            <p>Enable your organization to streamline processes and achieve operational excellence with smart factories and IoT solutions.</p>
+                            <a role="button">Consult Our Experts <img src="/assets/images/arrow.png" alt="Know more"></a>
+                        </div>
+                    </div>
+                </ng-template>
+            </owl-carousel-o>
         </div>
     </div>
 </section>

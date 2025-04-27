@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { OwlOptions } from 'ngx-owl-carousel-o';
 
 @Component({
   selector: 'app-our-blog',
@@ -6,12 +7,13 @@ import { Component } from '@angular/core';
   styleUrls: ['./our-blog.component.scss']
 })
 export class OurBlogComponent {
-  customOptions = {
+  customOptions: OwlOptions = {
     loop: true,
     margin: 10,
     nav: false,
     dots: true,
     autoplay: true,
+    center: true,
     autoplayTimeout: 3000,
     responsive: {
       0: { items: 1 },

@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { OwlOptions } from 'ngx-owl-carousel-o';
 
 @Component({
   selector: 'app-about-us',
@@ -6,6 +7,24 @@ import { Component } from '@angular/core';
   styleUrls: ['./about-us.component.scss']
 })
 export class AboutUsComponent {
+
+  award: OwlOptions = {
+      loop: true,
+      margin: 30,
+      autoplay:true,
+      autoplayTimeout:1000,
+      autoplayHoverPause:true,
+      smartSpeed: 1000,
+      slideTransition: 'linear',
+      nav: true,
+      dots: false,
+      center: true,
+      responsive: {
+        1000: {
+          items: 6
+        }
+      }
+  }; 
   selectedIndustry: string = 'Mining';
   selectedBackground: string = "url('/assets/images/banner/mining-bg.png') center/cover no-repeat";
 

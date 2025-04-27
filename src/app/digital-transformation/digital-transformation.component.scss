@@ -109,15 +109,23 @@
         font-weight: 900;
     }
     .services-container {
-        display: flex;
-        justify-content: center;
-        gap: 20px;
-        padding: 20px;
-        flex-wrap: wrap;
+        // display: flex;
+        // justify-content: center;
+        // gap: 20px;
+        // padding: 20px;
+        // flex-wrap: wrap;
+        ::ng-deep.owl-item.active.center {
+                .service-card {
+                    border-bottom: solid 4px var(--primary-blue);
+                .service-content a {
+                    margin-left: 2px;
+                }
+            }
+        }
     }
     .service-card {
         background: var(--lite-white);
-        width: 250px;
+        width: 100%;
         border-radius: 10px;
         overflow: hidden;
         text-align: center;

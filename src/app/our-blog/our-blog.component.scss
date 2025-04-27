@@ -30,6 +30,16 @@
             .blog-content h4, .blog-content p, .date{
                 color: #fff;
             }
+        }        
+    }
+    ::ng-deep.owl-item.active.center {
+        .blog-content {
+            background-color: var(--primary-blue);
+            padding-bottom: 40px;
+            border-radius: 0 0 10px 10px;
+            h4, p, .date{
+                color: #fff !important;
+            }
         }
     }
     .blog-content {
@@ -53,4 +63,8 @@
             color: var(--gray);
         }
     }
+}
+owl-carousel-o, .owl-carousel, .owl-stage-outer {
+    width: 100% !important;
+    display: block !important;
 }
