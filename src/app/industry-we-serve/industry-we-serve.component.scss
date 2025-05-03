@@ -1,0 +1,55 @@
+.we-serve {
+    background: linear-gradient(91.7deg, #0A3667 7.61%, #2A67AC 46.32%, #0A3667 85.2%);
+    padding: 60px 0;
+    h2 {
+        color: #fff;
+        font-size: 34px;
+        font-weight: 500;
+        margin-bottom: 30px;
+        text-align: center;
+        b {
+            font-weight: 700;
+        }
+    }
+    .industry {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        max-width: 60%;
+        margin: auto;
+        @media (max-width: 991px) {
+            max-width: 90%;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+        .list {
+            font-size: 30px;
+            font-weight: 300;
+            color: #fff;
+            @media (max-width: 991px) {
+                width: 100%;
+                text-align: center;
+            }
+            &:hover {
+                img {
+                    animation: puff 1s infinite ease-out;
+                }
+            }
+            img {
+                margin: 0 auto 12px auto;
+                display: block;
+                transition: .2s;
+            }
+        }
+    }
+}
+@keyframes puff {
+    0% {
+      transform: translate(0, 0) scale(1);
+      opacity: 0.6;
+    }
+    100% {
+      transform: translate(-30px, -30px) scale(2);
+      opacity: 0;
+    }
+}

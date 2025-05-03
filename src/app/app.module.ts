@@ -44,6 +44,11 @@ import { LearningManagementSystemComponent } from './learning-management-system/
 import { LibraryManagementSolutionComponent } from './library-management-solution/library-management-solution.component';
 import { PaSystemComponent } from './pa-system/pa-system.component';
 import { CarouselModule } from 'ngx-owl-carousel-o';
+import { SoftwareSuppliesComponent } from './software-supplies/software-supplies.component';
+import { IndustryWeServeComponent } from './industry-we-serve/industry-we-serve.component';
+import { HardwareSuppliesComponent } from './hardware-supplies/hardware-supplies.component';
+import { OurPartnersComponent } from './our-partners/our-partners.component';
+import { HardwareServicesComponent } from './hardware-services/hardware-services.component';
 
 
 @NgModule({
@@ -87,7 +92,12 @@ import { CarouselModule } from 'ngx-owl-carousel-o';
     DigitalClassroomComponent,
     LearningManagementSystemComponent,
     LibraryManagementSolutionComponent,
-    PaSystemComponent
+    PaSystemComponent,
+    SoftwareSuppliesComponent,
+    IndustryWeServeComponent,
+    HardwareSuppliesComponent,
+    OurPartnersComponent,
+    HardwareServicesComponent
   ],
   imports: [
     BrowserModule,
