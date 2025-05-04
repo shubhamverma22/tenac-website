@@ -49,6 +49,17 @@ import { IndustryWeServeComponent } from './industry-we-serve/industry-we-serve.
 import { HardwareSuppliesComponent } from './hardware-supplies/hardware-supplies.component';
 import { OurPartnersComponent } from './our-partners/our-partners.component';
 import { HardwareServicesComponent } from './hardware-services/hardware-services.component';
+import { AnnualMaintainanceCdComponent } from './annual-maintainance-cd/annual-maintainance-cd.component';
+import { ContactFormComponent } from './contact-form/contact-form.component';
+import { DataAnalyticsComponent } from './data-analytics/data-analytics.component';
+import { DataBackupComponent } from './data-backup/data-backup.component';
+import { DataMigrationServiceComponent } from './data-migration-service/data-migration-service.component';
+import { DataCenterSupportComponent } from './data-center-support/data-center-support.component';
+import { ItConsultingComponent } from './it-consulting/it-consulting.component';
+import { ItFacultyManagementComponent } from './it-faculty-management/it-faculty-management.component';
+import { ItRestorationComponent } from './it-restoration/it-restoration.component';
+import { ManagedCloudServicesComponent } from './managed-cloud-services/managed-cloud-services.component';
+import { ManagedPrintComponent } from './managed-print/managed-print.component';
 
 
 @NgModule({
@@ -97,7 +108,18 @@ import { HardwareServicesComponent } from './hardware-services/hardware-services
     IndustryWeServeComponent,
     HardwareSuppliesComponent,
     OurPartnersComponent,
-    HardwareServicesComponent
+    HardwareServicesComponent,
+    AnnualMaintainanceCdComponent,
+    ContactFormComponent,
+    DataAnalyticsComponent,
+    DataBackupComponent,
+    DataMigrationServiceComponent,
+    DataCenterSupportComponent,
+    ItConsultingComponent,
+    ItFacultyManagementComponent,
+    ItRestorationComponent,
+    ManagedCloudServicesComponent,
+    ManagedPrintComponent
   ],
   imports: [
     BrowserModule,

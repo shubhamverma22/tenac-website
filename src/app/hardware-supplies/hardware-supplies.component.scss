@@ -125,7 +125,7 @@ section {
         font-size: 22px;
         text-align: center;
         font-weight: 400;
-        color: #363740;
+        color: var(--black-txt);
         position: relative;
         z-index: 2;
         margin-top: 30px;
@@ -217,7 +217,7 @@ section {
         top: 5%;
         width: 100%;
         h3 {
-            color:#363740;
+            color:var(--black-txt);
             font-size: 47px;
             font-weight: 400;
             @media (max-width:991px) {
@@ -280,7 +280,7 @@ section {
         font-size: 22px;
         text-align: center;
         font-weight: 400;
-        color: #363740;
+        color: var(--black-txt);
         position: relative;
         z-index: 2;
         margin-top: 30px;
@@ -318,7 +318,7 @@ section {
                 font-size: 18px;
                 font-weight: 400;
                 text-align: center;
-                color: #363740;
+                color: var(--black-txt);
                 background: #fff;
                 border-radius: 6px;
                 box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);

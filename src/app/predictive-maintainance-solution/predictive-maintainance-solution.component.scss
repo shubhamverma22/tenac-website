@@ -18,7 +18,7 @@
     .feature-heading{
         font-size: 31px;
         font-weight: 900;
-        color: #363740;
+        color: var(--black-txt);
         display: flex;
         align-items: center;
         gap: 40px;
@@ -89,7 +89,7 @@
 .feature-heading{
     font-size: 31px;
     font-weight: 900;
-    color: #363740;
+    color: var(--black-txt);
     display: flex;
     align-items: center;
     gap: 40px;

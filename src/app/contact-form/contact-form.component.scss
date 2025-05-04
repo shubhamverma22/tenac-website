@@ -1,0 +1,73 @@
+// footer banner
+.footer-banner {
+    position: relative;
+    background: url('/assets/images/annual-maintenance/comprehensive-maintenance.png') no-repeat center center/cover;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    h1 {
+        font-size: 41px;
+        font-weight: 900;
+    }
+    p {
+        font-size: 30px;
+        font-weight: 700;
+        color: var(--primary-yellow);
+        margin-bottom: 50px;
+    }
+    .form-container {
+        border: 2px solid #FFFFFF;
+        background: #FFFFFFA8;
+        backdrop-filter: blur(13.800000190734863px);
+        padding: 60px;
+        max-width: 70%;
+        margin: auto;
+        border-radius: 25px;
+        .contact-form {        
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 20px;
+            input {
+                border: none;
+                border-bottom: solid 1px #000000;
+                width: 45%;
+                background-color: transparent;
+                &:active, &:focus {
+                    outline: none;
+                }
+                &::placeholder {
+                    color: #000000;
+                }
+            }
+            textarea {
+                border: none;
+                border-bottom: solid 1px #000000;
+                width: 100%;
+                background-color: transparent;
+                resize: none;
+                &:active, &:focus {
+                    outline: none;
+                }
+                &::placeholder {
+                    color: #000000;
+                }
+            }
+            .btn {
+                display: inline-block;
+                background: var(--primary-yellow);
+                color: black;
+                padding: 10px 20px;
+                margin-top: 20px;
+                text-decoration: none;
+                font-size: 14px;
+                font-weight: 700;
+                border-radius: 5px;
+            }
+            .btn:hover {
+                background: var(--primary-yellow-dark);
+            }
+        }
+    }
+}
